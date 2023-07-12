@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Day4-Goroutines-Channel/Content"
+	"Day4-Goroutines-Channel/WorkerBufferChannel"
 	"fmt"
 )
 
@@ -18,7 +18,14 @@ func main() {
 	//Content.SelectQuitChannel()
 	//Content.FactorialCheck()
 	fmt.Println("-------------------- Worker Pool --------------------------")
-	Content.WorkerPool()
+	//Content.WorkerPool()
 	//WorkerPoolSimple.WorkerPoolSimple()
 	//WorkerPoolSimple.WorkerSplit()
+	WorkerBufferChannel.WorkerBuffer()
+	fmt.Println("-------------------- For Select ---------------------------")
+	//Content.ForSelect()
+	fmt.Println("-------------------- Mutex Race Condition ---------------------------")
+	//Content.MutexRaceCondition()
+	fmt.Println("---------------------- Wait Group ---------------------------")
+	//Content.WaitGroup()
 }
